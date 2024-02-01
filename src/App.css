@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+@media(min-width:376px){
+    body{
+        background-image:url("bg-main-desktop.png");
+        background-size: cover;
+        user-select: none;
+    }
+    .App{
+        display: flex;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    .Tarjetas{
+        position: relative;
+    }
+    .TarjetaEnfrente{
+        background-image: url("bg-card-front.png");
+        width: 447px;
+        height: 245px;
+        margin-top: 30px;
+        margin-left: 130px;
+        position: absolute;
+    }
+    .TarjetaDetras{
+        background-image: url("bg-card-back.png");
+        width: 447px;
+        height: 245px;
+        margin-left: 200px;
+        margin-top: 300px;
+        position: absolute;
+    }
+    .TextoBorrar{
+        color:transparent;
+    }
+    .atras{
+        margin: 110px 0 0 360px;
+        color: white;
+    }
+    .ntar{
+        color: transparent;
+    }
+    .ntarjeta{
+        margin: 125px 0 0 42px;
+        color: white;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    .nomtarjeta{
+        margin: 20px 0 0 30px;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+    .fechtarjeta{
+        margin-left: 200px;
+    }
+    .fondoForm{
+        height: 679px;
+        width: 920px;
+        background-color: white;
+    }
+    .Form{
+        padding-top: 200px;
+    }
+    .FormGrande{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .Formmini{
+        padding-left: 265px;
+    }
+    .inputGrande{
+        width: 380px;
+        height: 25px;
+    }
+    .Boton{
+        width: 390px;
+        height: 35px;
+        font-family: 'Space Grotesk', sans-serif;
+        background-color: hsl(278, 68%, 11%);
+        color: white;
+        border-radius:5px;
+        border: 0;
+    }
+    .CVC{
+        padding-left: 45px;
+    }
+    .MM,.YY{
+        width: 70px;
+        height: 30px;
+    }
+    .yy{
+        padding-left: 10px;
+    }
+    .cvc{
+        width: 195px;
+        height: 30px;
+    }
+    .Cvc{
+        padding-left: 20px;
+    }
+    input{
+        font-family: 'Space Grotesk', sans-serif;
+        cursor: pointer;
+        border-color:rgb(192, 190, 190);
+        border-width: 1px;
+        outline: none;
+        border-radius: 4px;
+    }
+    input:active {
+        border-color:none;
+        outline: none;
+    }
+    input:hover{
+        outline: none;
+        border-color:rgb(5, 112, 253);
+    }
+    input:focus{
+        outline: none;
+        border-color:rgb(5, 112, 253);
+    }
+    .Titulos,.Titulosuno{
+        color: hsl(278, 68%, 11%);
+        font-size: 13px;
+    }
+    .Titulos{
+        padding-bottom: 8px;
+        padding-top: 8px;
+    }
+    .Confirm{
+        padding-top: 25px;
+    }
+    .fecha{
+        margin-left: 25px;
+    }
+    .error-cvc{
+        border-color: red;
+    }
+    .errorNombre,.errorNombre:hover,.errorNombre:focus,
+    .errorNumTarjeta,.errorNumTarjeta:hover,.errorNumTarjeta:focus{
+        border-color: red;
+    }
+    
+    .espan{
+        color: red;
+        font-size: 12px;
+    }
+    .Confirmacion{
+        margin-left: 420px;
+        margin-top: 200px;
+    }
+    .Agradecimiento{
+        margin-left: 75px;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        color: hsl(278, 68%, 11%);
+        font-weight: 500;
+    }
+    .Parrafo{
+        font-size: 15px;
+        margin-left: 45px;
+        opacity: 0.6;
+    }
+    .Continue{
+        width: 300px;
+        height: 35px;
+        border-radius: 5px;
+        outline: none;
+        border-width: 1px;
+        background-color: hsl(278, 68%, 11%);
+        color: white;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    .Continue:active{
+        background-color: rgb(177, 58, 131);
+        border: none;
+    }
+    .acomodarBoton{
+        margin-left: 5px;
+        padding-top: 40px;
+    }
+    .Palomita{
+        width: 50px;
+        height: 50px;
+        margin-left: 130px;
+    }
+    .TarjetaPantallaChica{
+        display: none;
+    }
+
+}
+@media(max-width:375px){
+    .Tarjetas{
+        display: none;
+    }
+    body{
+        background-image:url("bg-main-desktop.png");
+    }
+    .App{
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+    }
+    .Tarjetas{
+        height: 250px;
+    }
+    .TarjetaEnfrente{
+        background-image: url("bg-card-front.png");
+        background-size: cover;
+        width: 70%;
+        height: 25%;
+        color: white;
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+    .TarjetaDetras{
+        background-image: url("bg-card-back.png");
+        position: absolute;
+        width: 200px;
+        height: 80px;
+        object-fit: cover;
+        margin-left: 90px;
+        margin-bottom: 10px;
+    }
+    .TextoBorrar{
+        color: transparent;
+    }
+    .fondoForm{
+        height: 100%;
+        width: 100%;
+        padding-top: 260px;
+    }
+    .Form{
+        height: 399px;
+        background-color: white;
+        margin-top: 0px;
+    }
+    .FormGrande{
+        display: grid;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .Formmini{
+        padding-left: 10px;
+    }
+    .inputGrande{
+        width: 330px;
+        height: 25px;
+    }
+    .Boton{
+        width: 340px;
+        height: 35px;
+        font-family: 'Space Grotesk', sans-serif;
+        background-color: hsl(278, 68%, 11%);
+        color: white;
+        border-radius:5px;
+        border: 0;
+    }
+    .CVC{
+        padding-left: 25px;
+    }
+    .MM,.YY{
+        width: 50px;
+        height: 30px;
+        text-align: center;
+    }
+    .yy{
+        padding-left: 10px;
+    }
+    .cvc{
+        width: 190px;
+        height: 30px;
+    }
+    .Cvc{
+        padding-left: 20px;
+    }
+    input{
+        font-family: 'Space Grotesk', sans-serif;
+        cursor: pointer;
+        border-color:rgb(192, 190, 190);
+        border-width: 1px;
+        outline: none;
+        border-radius: 4px;
+    }
+    input:active {
+        border-color:none;
+        outline: none;
+    }
+    input:hover{
+        outline: none;
+        border-color:rgb(5, 112, 253);
+    }
+    input:focus{
+        outline: none;
+        border-color:rgb(5, 112, 253);
+    }
+    .Titulos,.Titulosuno,.TitulosNombre{
+        color: hsl(278, 68%, 11%);
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .TitulosNombre{
+        padding-bottom: 8px;
+        padding-top: 50px;
+    }
+    .Confirm{
+        padding-top: 25px;
+        margin: 0;
+    }
+    .fecha{
+        margin-left: 10px;
+    }
+    .error-cvc{
+        border-color: red;
+    }
+    .errorNombre,.errorNombre:hover,.errorNombre:focus,
+    .errorNumTarjeta,.errorNumTarjeta:hover,.errorNumTarjeta:focus{
+        border-color: red;
+    }
+    
+    .espan{
+        color: red;
+        font-size: 12px;
+    }
+    .Confirmacion{
+        margin-left: 20px;
+        margin-top:20px;
+        height:360px;
+    }
+    .ConfirmacionFondo{
+        background-color: white;
+        margin-bottom: 20px;
+        height: 399px;
+        margin: 0;
+    }
+    .Palomita{
+        margin-left: 130px;
+        margin-top: 20px;
+        width: 70px;
+        height: 70px;
+    }
+    .Agradecimiento{
+        margin-left: 80px;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        color: hsl(278, 68%, 11%);
+        font-weight: 500;
+    }
+    .Parrafo{
+        font-size: 14px;
+        margin-left: 60px;
+        opacity: 0.6;
+    }
+    .acomodarBoton{
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .Continue{
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        outline: none;
+        border-width: 1px;
+        background-color: hsl(278, 68%, 11%);
+        color: white;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    .Continue:active{
+        background-color: rgb(177, 58, 131);
+        border: none;
+    }
+    .TarjetaDetrasPC{
+        width: 300px;
+        margin-left:65px; 
+        position: absolute;
+        margin-top: 30px;
+    }
+    .TarjetaEnfrentePC{
+        width: 300px;
+        position: absolute;
+        margin-top: 120px;
+    }
+    .sobreCVC{
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 99px;
+        color: white;
+    }
+    .sobreTarjeta{
+        position: absolute;
+        margin-left: 23px;
+        margin-top: 195px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: white;
+    }
+    .sobreNombre{
+        position: absolute;
+        margin-top: 230px;
+        font-size: 15px;
+        padding-left: 20px;
+        color: white;
+    }
+    .sobreFecha{
+        margin-left: 100px;
+    }
+}
