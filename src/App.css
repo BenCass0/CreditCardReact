@@ -106,7 +106,7 @@
         border-color:rgb(192, 190, 190);
         border-width: 1px;
         outline: none;
-        border-radius: 4px;
+        border-radius: 3px;
     }
     input:active {
         border-color:none;
